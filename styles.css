@@ -1,0 +1,229 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+.container{
+    width: 90%;
+    margin: auto;
+    margin-top: 2rem;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.brandlogo{
+    font-weight: bold;
+    font-size: 2.5rem
+    
+    
+}
+
+.navlinks ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+
+
+}
+.navlinks li{
+    list-style: none;
+}
+.navlinks li a{
+    text-decoration: none;
+    padding: 1rem;
+    display: block;
+    color: rgb(95, 94, 94);
+}
+
+.HeroSection{
+    display: grid;
+    grid-template-columns: 70% 28%;
+    height: 500px;
+    
+    gap: 1rem;
+
+}
+.HeroLeft{
+    /* border: 1px solid gray; */
+}
+.hlefttop{
+    
+    height: 50%;
+    background-image: url("images/image-web-3-desktop.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.hleftbottom{
+    display: grid;
+    grid-template-columns: 40% 50%;
+    padding-top: 1rem;
+    gap: 10%;
+    
+}  
+
+.bright{
+   
+    font-size: 1.5rem;
+    
+}
+.bright h1{
+    
+}
+
+.readmoresec{
+
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+.btnsec button{
+    width: 180px;
+    height: 40px;
+    color: white;
+    background-color: rgb(236, 68, 56);
+    cursor: pointer;
+    border: none;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.btnsec button:hover{
+    background-color: black;
+}
+
+.HeroRight{
+    padding: 1rem;
+    background-color: black;
+}
+.righttitle{
+    color: rgb(255, 196, 0);
+}
+.rightnews{
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+.rightnews1 p{
+    color: grey;
+}
+.rightnews1 h3:hover{
+    color: rgb(255, 196, 0);
+    cursor: pointer;
+}
+
+
+
+.navlinks li a:hover{
+    color:rgb(236, 68, 56);
+}
+
+
+
+
+.trendsec{
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+}
+
+.trenditem{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 1rem;
+   
+    
+}
+.itemimg{
+    width: 100%;
+}
+.iteminfo{
+    
+    
+}
+.itemimg >img{
+    width: 100%;
+    height: 100%;
+}
+
+.togglebtn{
+    position: absolute;
+    top: .7rem;
+    right: 1rem;
+    width: 30px;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 21px;
+    cursor: pointer;
+}
+.togglebtn .bar{
+    height: 5px;
+    width: 100%;
+    background-color: black;
+}
+
+
+@media screen and (max-width:700px) {
+    .container{
+        width: 93%;
+        margin-top: 0;
+        padding: 1rem;
+    }
+    .HeroSection{
+        height: auto;
+        grid-template-columns: 1fr;
+    }
+    .HeroLeft{
+        height: auto;
+       
+    }
+    .hlefttop{
+        height: 400px;
+    }
+    .hleftbottom{
+        grid-template-columns: 1fr;
+        padding: 0;
+    }
+    .readmoresec{
+        padding: 0;
+        margin-top: o;
+    }
+    .HeroRight{
+        margin-top: 5rem;
+    }
+    .trendsec{
+        grid-template-columns: 1fr ;
+    }
+    .togglebtn{
+        display: flex;
+        
+        
+    }
+    .navlinks{display: none;width: 100%;}
+    .navbar{
+        
+        
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        
+    }
+    .navlinks ul{
+        width: 80%;
+        height: 80vh;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: auto;
+        gap: 1rem;
+       
+    }
+    .navlinks.active{
+        display: flex;
+        background-color: azure;
+    }
+    
+}
